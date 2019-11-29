@@ -1,0 +1,57 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800|Roboto|Roboto+Slab&display=swap');
+
+@font-face {
+    font-family: Strange;
+    src: url(../font/Strange.ttf);
+}
+
+/* General Styles */
+
+:root {
+  --black-color: black;
+  --grey-color: grey;
+  --secondary-color: #f30000;
+  --accent-color: #80ff00;
+}
+
+html {
+    background-color: var(--black-color);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 2em;
+}
+
+p {
+    color: white;
+}
+
+h1 {
+    font-family: 'Strange', cursive;
+    font-size: 4em;
+}
+
+a {
+    color: var(--accent-color);
+}
+
+button {
+    padding: 5px;
+    background-color: var(--secondary-color);
+    border: none;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2em;
+    
+}
+
+input {
+    padding: 5px;
+    font-size: 1.2em;
+}
