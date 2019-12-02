@@ -1,4 +1,4 @@
-/* Fonts */
+/* ---------- Fonts ---------- */
 
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800|Roboto|Roboto+Slab&display=swap');
 
@@ -7,7 +7,7 @@
     src: url(../font/Strange.ttf);
 }
 
-/* General Styles */
+/* ---------- General Styles ---------- */
 
 :root {
   --black-color: black;
@@ -21,11 +21,12 @@
 html {
     background-color: var(--black-color);
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 h2 {
-    font-family: 'Alegreya Sans SC', sans-serif;
+    font-family: 'Alegreya Sans SC', Arial, Helvetica, sans-serif;
+    text-align: center;
     text-transform: uppercase;
     color: white;
     font-size: 2em;
@@ -36,8 +37,9 @@ p {
 }
 
 h1 {
-    font-family: 'Strange', cursive;
+    font-family: 'Strange', Arial, Helvetica, sans-serif;
     font-size: 4em;
+    text-align: center;
 }
 
 a {
@@ -48,9 +50,9 @@ button {
     padding: 5px;
     background-color: var(--secondary-color);
     border: none;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab', "Times New Roman", Times, serif;
     font-size: 1.2em;
-    
+
 }
 
 input {
@@ -58,9 +60,13 @@ input {
     font-size: 1.2em;
 }
 
-/* Section Styles */
+/* ---------- Attraction Page Styles ---------- */
 
-#serviceNavigation {
+#ap-main-banner, #ap-about-ride, #ap-how-to-enjoy{
+    text-align: center;
+}
+
+.map {
     background-color: var(--dark-grey-color);
 }
 
@@ -68,20 +74,27 @@ input {
     background-color: var(--light-grey-color);
 }
 
-.map {
+/* ---------- Services Page Styles ---------- */
+
+#serviceNavigation {
     background-color: var(--dark-grey-color);
 }
+
+/* ---------- Home Page Styles ---------- */
 
 .attractions {
     background-color: var(--dark-grey-color);
 }
 
-/* Footer Styles */
+/* ---------- Footer Styles ---------- */
 
 .social {
     background-color: var(--white-color);
     color: var(--black-color);
-}/** general **/
+}
+
+
+/** general **/
 .container{
     max-width: 1200px;
     width: 100%;
