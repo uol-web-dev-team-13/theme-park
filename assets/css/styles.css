@@ -11,7 +11,9 @@
 
 :root {
   --black-color: black;
-  --grey-color: grey;
+  --white-color: white;
+  --light-grey-color: grey;
+  --dark-grey-color: #1d1d1d;
   --secondary-color: #f30000;
   --accent-color: #80ff00;
 }
@@ -55,7 +57,31 @@ input {
     padding: 5px;
     font-size: 1.2em;
 }
-/** general **/
+
+/* Section Styles */
+
+#serviceNavigation {
+    background-color: var(--dark-grey-color);
+}
+
+#stats {
+    background-color: var(--light-grey-color);
+}
+
+.map {
+    background-color: var(--dark-grey-color);
+}
+
+.attractions {
+    background-color: var(--dark-grey-color);
+}
+
+/* Footer Styles */
+
+.social {
+    background-color: var(--white-color);
+    color: var(--black-color);
+}/** general **/
 .container{
     max-width: 1200px;
     width: 100%;
