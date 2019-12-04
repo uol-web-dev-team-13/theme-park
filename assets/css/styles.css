@@ -81,13 +81,13 @@ input {
 }
 
 
+
 /* ---------- Footer Styles ---------- */
 
 .social {
     background-color: var(--white-color);
     color: var(--black-color);
 }
-
 
 /** general **/
 .container{
@@ -240,3 +240,4 @@ input {
     height: 36px;
     width: 50px;
 }
+
