@@ -55,3 +55,17 @@ input {
     padding: 5px;
     font-size: 1.2em;
 }
+/** general **/
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+/** Homepage **/
+
+#homepage {
+
+}
