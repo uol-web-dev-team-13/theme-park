@@ -32,8 +32,19 @@ h2 {
     font-size: 2em;
 }
 
+h3 {
+    font-family: 'Alegreya Sans SC', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
 p {
     color: white;
+    font-size: 1.3em;
+}
+
+a, address {
+    font-size: 1.3em;
 }
 
 h1 {
@@ -62,16 +73,91 @@ input {
 
 /* ---------- Attraction Page Styles ---------- */
 
-#ap-main-banner, #ap-about-ride, #ap-how-to-enjoy{
+main#ap-main {
+    display: grid;
+    grid-template-areas: 
+        "mainBanner mainBanner"
+        "information stats"
+        "howToEnjoy howToEnjoy"
+        "map map";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+main#ap-main > section {
     text-align: center;
+    padding: 50px;
 }
 
-.map {
-    background-color: var(--dark-grey-color);
+main#ap-main > section > h2{
+    color: var(--accent-color);
 }
 
-#stats {
+main#ap-main > section > div.content{
+    
+}
+
+main#ap-main > section#ap-main-banner {
+    grid-area: mainBanner;
+    background: url(../img/banner.jpg);
+    background-size: contain;
+    
+    position: relative;
+}
+
+main#ap-main > section#ap-main-banner > div#ap-title {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    left: calc(50% - 300px);
+    top: calc(50% - 150px);
+    padding: 20px;
+    background-color: black;
+    border: 5px solid white;
+    
+}
+
+main#ap-main > section#information {
+    grid-area: information;
+    border: 5px solid var(--light-grey-color);
+}
+
+main#ap-main > section#stats {
+    grid-area: stats;
     background-color: var(--light-grey-color);
+    
+}
+
+section#stats > table {
+    border-collapse: collapse;
+    border: 5px solid white;
+    margin: auto;
+}
+
+section#stats > table td {
+    padding: 30px;
+    border: 5px solid black;
+    color: black;
+    font-size: 1.3em;
+}
+
+
+section#stats > table td:first-child {
+    font-weight: bold;
+    font-style: italic;
+}
+
+main#ap-main > section#ap-how-to-enjoy {
+    grid-area: howToEnjoy;
+}
+
+main#ap-main > section.map {
+    grid-area: map;
+    background-color: var(--light-grey-color);
+}
+
+main#ap-main > section.map > img {
+    border: 5px solid white;
 }
 
 /* ---------- Services Page Styles ---------- */
@@ -88,7 +174,55 @@ input {
 
 /* ---------- Footer Styles ---------- */
 
-.social {
+footer {
+    display: grid;
+    grid-template-areas: 
+        "social social social"
+        "ticket-links attraction-links contact-info";
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    text-align: center;
+}
+
+footer > div {
+    padding: 50px;
+}
+
+footer > .social {
+    width: 100%;
+    grid-area: social;
+    text-align: center;
     background-color: var(--white-color);
     color: var(--black-color);
 }
+
+footer > .social > a{
+    padding: 5px 100px;
+}
+
+footer > .social img{
+    width: 50px;
+    height: 50px;
+}
+
+footer > .footer-tickets {
+    grid-area: ticket-links;
+}
+
+footer > .footer-attractions {
+    grid-area: attraction-links;
+}
+
+footer > .footer-contact {
+    grid-area: contact-info;
+}
+
+footer > .footer-contact a{
+    font-size: inherit;
+}
+
+footer > .footer-links a{
+    display: block;
+    margin-bottom: 20px;
+}
+
