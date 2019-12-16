@@ -172,6 +172,50 @@ main#ap-main > section.map > img {
     background-color: var(--dark-grey-color);
 }
 
+/* ---------- Header Styles ---------- */
+
+header {
+    display: grid;
+    grid-template-areas: 
+        "logo nav nav nav search-bar";
+    width: 100%;
+    grid-template-columns:  repeat(5, auto);
+    grid-template-rows: auto;
+    align-items: center;
+
+}
+
+#logo {
+    display: inline-block;
+    grid-area: logo;
+}
+
+/* ---------- Nav Styles ---------- */
+
+nav {
+    grid-area: nav;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.3em;
+    color:hsl(0,0%,255%);
+    display:inline-block;
+    border-bottom: 2px solid var(--black-color);
+    padding:1em;
+    margin: 15px;
+}
+
+nav a:hover {
+    border-bottom: 2px solid var(--accent-color);
+    transition: border-bottom 300ms ease;
+
+}
+
+#search-bar {
+    grid-area: search-bar;
+}
+
 /* ---------- Footer Styles ---------- */
 
 footer {
