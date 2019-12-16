@@ -164,7 +164,66 @@ main#ap-main > section.map > img {
 
 #serviceNavigation {
     background-color: var(--dark-grey-color);
+    margin-left: 20%;
+    margin-right:20%;
+    margin-bottom: 1%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
 }
+
+#serviceNavigation img {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+#food-and-drink {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#accomodation {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#shopping {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#parking {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#family-services {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#atms {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#park-maps {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#accessibility {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h2 {
+    text-align: left;
+}
+
+p {
+    padding-left: 5px;
+}
+
 
 /* ---------- Home Page Styles ---------- */
 
