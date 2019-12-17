@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 </head>
-<body>
+<body id="homepage">
 
 <!-- header -->
 <header>
@@ -19,7 +19,7 @@
         <a href="./index.html">Home</a>
         <a href="./attraction-page.html">Attractions</a>
         <a href="./services.html">Services</a>
-        <a href="/about.html">About</a>
+        <a href="#">About</a>
     </nav>
     <!-- search -->
     <form action="/action_page.php" id="search-bar">
@@ -35,10 +35,10 @@
 
     <!-- main banner with call to action -->
     <section class="banner">
-        <h1>UPCOMING THIS SEASON</h1>
-        <img src="./assets/img/banner.jpg" alt="upcoming this season">
-        <br>
-        <button class="button btn-action">BOOK MY RIDE</button>
+        <div id="hp-banner-text">
+            <h1>UPCOMING THIS SEASON</h1>
+        </div>
+        <button id="hp-banner-btn" class="button btn-action">BOOK MY RIDE</button>
 
     </section>
 
@@ -76,25 +76,35 @@
         <ul>
             <li>
                 <img src="assets/img/ride.jpg" alt="Ride">
+                <a href="./attraction-page.html">Ride</a>
             </li>
             <li>
                 <img src="./assets/img/ski.jpg" alt="Ski">
+                <a href="./attraction-page.html">Ski</a>
+
             </li>
             <li>
                 <img src="./assets/img/circus-du-soleil.jpg" alt="Circus du soleil">
+                <a href="./attraction-page.html">Circus du Soleil</a>
             </li>
             <li>
                 <img src="./assets/img/carousel.jpg" alt="Carousel">
+                <a href="./attraction-page.html">Carousel</a>
+
             </li>
             <li>
                 <img src="./assets/img/water-slide.jpg" alt="Water Slide">
+                <a href="./attraction-page.html">Master Slide</a>
             </li>
             <li>
                 <img src="assets/img/roller-coaster.jpg" alt="Roller Coaster">
+                <a href="./attraction-page.html">Roller Coaster</a>
             </li>
         </ul>
 
         <a href="./attraction-page.html" title="See more">See More</a>
+
+        <div class="clearfix"></div>
     </section>
 
     <!-- footer -->
