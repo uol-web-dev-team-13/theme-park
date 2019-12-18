@@ -2,19 +2,33 @@
 
 <html lang="en">
 <head>
+    <!-- Title tag is good for SEO and also displays on the browser tab -->
     <title>Forbidden Height Theme Park - Attraction Page</title>
+    
+    <!-- These meta tags are helpful for searh engines -->
     <meta name="description" content="Horror themed park">
     <meta name="keywords" content="horror, theme park, fun, family, rides">
+    <!-- 
+        The viewport meta tag is used to ensure the webpgae is displayed without zoom and displays better
+        across different screen sizes.
+    -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- charset tag tells the browser what encoding is used in this webpage -->
     <meta charset="UTF-8">
+    <!-- This tag imports the styles for the webpage -->
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 </head>
 <body>
     <!-- header -->
     <header>
         <!-- logo -->
+        <!-- 
+            An ID has been given to the logo so that we can apply styles to it directly 
+            Alt text has also been used for accesibility reassons. ie screen reader users.
+        -->
         <a href="./index.html"><img src="assets/img/logo.png" alt="Unholy Mountains Logo" id="logo"></a>
         <!-- navigation -->
+        <!-- HTML 5 semantic tag nav has been used here to give the main navigation the proper semantic meaning -->
         <nav>
             <a href="./index.html">Home</a>
             <a href="./attraction-page.html">Attractions</a>
@@ -23,6 +37,7 @@
         </nav>
 
         <!-- search -->
+        <!-- An HTML form has been added here to allow users to submit a search query to the server -->
         <form action="/action_page.php" id="search-bar">
             <label>
                 <input type="text" placeholder="Search.." name="search">
@@ -31,20 +46,29 @@
         </form>
     </header>
     <!-- main section -->
+    <!--
+        HTML ids have been prefixed with "ap-" which stands for "attration page". This is to make sure that there are no conflicts 
+        between elements of different pages and allows to write CSS specifically for this page.
+    -->
     <main id="ap-main">
+        <!-- The page contains 5 sections. They are each a cell in a CSS grid which has been used to style the page. -->
         <section id="ap-main-banner">
+            <!-- The ap-title div allows me to apply box styling to the div and keep all the text inside of it, displaying it like a container -->
             <div id="ap-title">
+                <!-- H1 has been used here because this is the main title of the page, the attraction's name -->
                 <h1>The Mountain Of Death</h1>
                 <p>This mountain might seem like no big dead but people have died of fear while riding it. Are you up to the challenge?</p>
             </div>
         </section>
-        <section id="information">
+        <!-- Titles in the following sections use H2 tag because they are one level down the main title of the page. They are subtitles -->
+        <section id="ap-information">
             <h2>Ride Information</h2>
             <p>The mountain of death has scared visitors since its opening in 1975. It was the first rollercoster to reach a speed of 200km/h.</p>
             <p>The ride is notorious for not letting riders catch a break, once you think the worst is past you, another massive drop is just around the corner.</p>
         </section>
-        <section id="stats">
+        <section id="ap-stats">
             <h2>Ride Stats</h2>
+            <!-- A table tag has been used here to display tabular data. In particular stats about the ride. -->
             <table>
                 <tr>
                     <td>Location</td>
@@ -74,25 +98,34 @@
         </section>
         <section id="ap-how-to-enjoy">
             <h2>How to enjoy the attraction</h2>
-            <div class="content">
-                <h3>Unparallel Acceleration</h3>
-                <p>Just 2 seconds after explosive firing, the maximum speed reaches 200km/h. Buckle up, sit back and enjoy the ride!</p>
-                <h3>The world's largest loop!</h3>
-                <p>Time stops at the top of the largest loop in the world, but only for an instance before acceleration kicks back in what feels like the trip to hell.</p>
-                <h3>Breathtaking views</h3>
-                <p>Among all the climbing and dropping, brethtaking views of the nearby mountains and forest are abundant to enjoy.</p>
-            </div>
+            <!-- H3 tags are used for sections within sections -->
+            <h3>Unparallel Acceleration</h3>
+            <p>Just 2 seconds after explosive firing, the maximum speed reaches 200km/h. Buckle up, sit back and enjoy the ride!</p>
+            <h3>The world's largest loop!</h3>
+            <p>Time stops at the top of the largest loop in the world, but only for an instance before acceleration kicks back in what feels like the trip to hell.</p>
+            <h3>Breathtaking views</h3>
+            <p>Among all the climbing and dropping, brethtaking views of the nearby mountains and forest are abundant to enjoy.</p>
         </section>
-        <section class="map">
+        <!-- A section containing a map of the ride's location -->
+        <section id="ap-map">
             <h2>Navigation</h2>
             <img src="assets/img/map.png" alt="Theme Park Map">
         </section>
     </main>
 
     <!-- footer -->
+    <!-- 
+        The footer is styled as a grid and it contains 4 cells. Therefore the different sections
+        have been splitted into 4 divs.
+    -->
     <footer>
+        <!-- The div allows us to group this and display it as a cell in a grid -->
         <div class="social">
             <!-- social media -->
+            <!-- 
+                Note that for accesibility reassons a title has been included for each image.
+                This shows when a user hover over the picture or for people using screen readers.
+            -->
             <h3>Follow Us</h3>
             <a href="/" title="Follow us on Instagram">
                 <img src="assets/img/social/instagram.svg" alt="Instagram Logo" />
@@ -108,6 +141,10 @@
             </a>
         </div>
         <!-- footer links -->
+        <!-- 
+            Note that footer-tickets and footer-attractions share the same styles mostly so both have been given the
+            same class "footer-links" to make it easier to apply CSS styles to both at the same time.
+        -->
         <div class="footer-tickets footer-links">
             <h3>Tickets</h3>
             <a href="/" title="Buy Tickets">Buy Tickets</a>
@@ -122,10 +159,18 @@
         </div>
         <div class="footer-contact">
             <h3>Contact Us</h3>
+            <!-- 
+                The mail to href has been used here tell the browser to open an email client 
+                when the user clicks on the link. 
+            -->
             <p>Email : <a href="mailto:forbidden-heights@example.com">forbidden-heights@example.com</a></p>
             <p>Address: </p>
 
             <!-- address -->
+            <!-- 
+                The address tag has been used to give the correct semantic meaning to the address information.
+                This is helpful for crawlers such as search engines who might find and use this information.
+            -->
             <address>
                 123 Main St. Forbidden Heights<br>
                 Scary Town<br>

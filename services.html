@@ -2,19 +2,33 @@
 
 <html lang="en">
 <head>
-    <title>Forbidden Height Theme Park - Services</title>
+    <!-- Title tag is good for SEO and also displays on the browser tab -->
+    <title>Forbidden Height Theme Park - Attraction Page</title>
+    
+    <!-- These meta tags are helpful for searh engines -->
     <meta name="description" content="Horror themed park">
     <meta name="keywords" content="horror, theme park, fun, family, rides">
+    <!-- 
+        The viewport meta tag is used to ensure the webpgae is displayed without zoom and displays better
+        across different screen sizes.
+    -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- charset tag tells the browser what encoding is used in this webpage -->
     <meta charset="UTF-8">
+    <!-- This tag imports the styles for the webpage -->
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 </head>
 <body>
-<!--header -->
+    <!--header -->
     <header>
         <!-- logo -->
+        <!-- 
+            An ID has been given to the logo so that we can apply styles to it directly 
+            Alt text has also been used for accesibility reassons. ie screen reader users.
+        -->
         <a href="./index.html"><img src="assets/img/logo.png" alt="Unholy Mountains Logo" id="logo"></a>
         <!-- navigation -->
+        <!-- HTML 5 semantic tag nav has been used here to give the main navigation the proper semantic meaning -->
         <nav>
             <a href="./index.html">Home</a>
             <a href="./attraction-page.html">Attractions</a>
@@ -22,20 +36,29 @@
             <a href="#">About</a>
         </nav>
 
-        <!--search-->
+        <!-- search -->
+        <!-- An HTML form has been added here to allow users to submit a search query to the server -->
         <form action="/action_page.php" id="search-bar">
-            <input type="text" placeholder="Search.." name="search">
+            <label>
+                <input type="text" placeholder="Search.." name="search">
+            </label>
             <button type="submit">Search</button>
         </form>
     </header>
     <main>
         <!-- main title-->
+        <!-- HTML ids have a prefix of "service-" to make sure there are no conflicts with other pages. -->
         <div id="service-title">
             <h1>Park Services</h1>
         </div>
 
         <!-- Park Services navigation -->
-        <div id="serviceNavigation">
+        <div id="service-navigation">
+            <!-- 
+                #id has been used in the href attribute so that the browser scrolls to the correct section of the page 
+                when one of the links is clicked. This allows the user to quickly find the relevant information without
+                having to scroll through all the other sections.
+            -->
             <a href="#food-and-drink"><img src="assets/img/food-and-drink-services.jpg" alt="Food and Drink Services"></a>
             <a href="#accomodation"><img src="assets/img/accomodation-services.jpg" alt="Accomodation Services"></a>
             <a href="#shopping"><img src="assets/img/shopping-services.jpg" alt="Shopping Facilities"></a>
@@ -47,7 +70,14 @@
         </div>
 
         <!-- Park Services -->
+        <!-- 
+            Each service has its own section here and all of them have common styles. Therefore a common class of "service-info" 
+            has been added so that these can all be targeted from CSS using that class.
 
+            They also have unique identifiers so that links from the navigation above can link to each one individually.
+
+            H2 tags are used for the titles of each section because they are one level down from the main page title.
+        -->
         <section id="food-and-drink" class="service-info">
             <h2>Food and Drink</h2>
             <p>All tastes are catered for in the park. We offer unique horror themed dishes, as well as familiar brand names.</p>
@@ -83,10 +113,11 @@
             <h2>Park Maps</h2>
             <p>Plan your stay by downloading one of our park maps. Available in multiple languages. Large print versions available for the visually impaired.</p>
             <ul>
-                <li><a href="/forbidden-heights-park-map-EN.pdf">Park Map (EN)</a></li>
-                <li><a href="/forbidden-heights-park-map-EN.pdf">Park Map (FR)</a></li>
-                <li><a href="/forbidden-heights-park-map-EN.pdf">Park Map (DE)</a></li>
-                <li><a href="/forbidden-heights-park-map-EN.pdf">Park Map (JP)</a></li>
+                <!-- Alt text has been added here for accesibility reassons. ie, people using screen readers. -->
+                <li><a href="/forbidden-heights-park-map-EN.pdf" alt="English Map PDF">Park Map (EN)</a></li>
+                <li><a href="/forbidden-heights-park-map-EN.pdf" alt="French Map PDF">Park Map (FR)</a></li>
+                <li><a href="/forbidden-heights-park-map-EN.pdf" alt="German Map PDF">Park Map (DE)</a></li>
+                <li><a href="/forbidden-heights-park-map-EN.pdf" alt="Japanese Map PDF">Park Map (JP)</a></li>
             </ul>
         </section>
 
@@ -97,10 +128,19 @@
 
     </main>
 
-<!-- footer -->
+    <!-- footer -->
+    <!-- 
+        The footer is styled as a grid and it contains 4 cells. Therefore the different sections
+        have been splitted into 4 divs.
+    -->
     <footer>
+        <!-- The div allows us to group this and display it as a cell in a grid -->
         <div class="social">
             <!-- social media -->
+            <!-- 
+                Note that for accesibility reassons a title has been included for each image.
+                This shows when a user hover over the picture or for people using screen readers.
+            -->
             <h3>Follow Us</h3>
             <a href="/" title="Follow us on Instagram">
                 <img src="assets/img/social/instagram.svg" alt="Instagram Logo" />
@@ -116,6 +156,10 @@
             </a>
         </div>
         <!-- footer links -->
+        <!-- 
+            Note that footer-tickets and footer-attractions share the same styles mostly so both have been given the
+            same class "footer-links" to make it easier to apply CSS styles to both at the same time.
+        -->
         <div class="footer-tickets footer-links">
             <h3>Tickets</h3>
             <a href="/" title="Buy Tickets">Buy Tickets</a>
@@ -130,10 +174,18 @@
         </div>
         <div class="footer-contact">
             <h3>Contact Us</h3>
+            <!-- 
+                The mail to href has been used here tell the browser to open an email client 
+                when the user clicks on the link. 
+            -->
             <p>Email : <a href="mailto:forbidden-heights@example.com">forbidden-heights@example.com</a></p>
             <p>Address: </p>
 
             <!-- address -->
+            <!-- 
+                The address tag has been used to give the correct semantic meaning to the address information.
+                This is helpful for crawlers such as search engines who might find and use this information.
+            -->
             <address>
                 123 Main St. Forbidden Heights<br>
                 Scary Town<br>

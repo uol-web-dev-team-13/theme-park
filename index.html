@@ -1,34 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Forbidden Height Theme Park - Home</title>
+    <!-- Title tag is good for SEO and also displays on the browser tab -->
+    <title>Forbidden Height Theme Park - Attraction Page</title>
+    
+    <!-- These meta tags are helpful for searh engines -->
     <meta name="description" content="Horror themed park">
     <meta name="keywords" content="horror, theme park, fun, family, rides">
+    <!-- 
+        The viewport meta tag is used to ensure the webpgae is displayed without zoom and displays better
+        across different screen sizes.
+    -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- charset tag tells the browser what encoding is used in this webpage -->
     <meta charset="UTF-8">
+    <!-- This tag imports the styles for the webpage -->
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 </head>
 <body id="homepage">
 
 <!-- header -->
 <header>
-    <!-- logo -->
-    <a href="./index.html"><img src="assets/img/logo.png" alt="Unholy Mountains Logo" id="logo"></a>
-    <!-- navigations -->
-    <nav>
-        <a href="./index.html">Home</a>
-        <a href="./attraction-page.html">Attractions</a>
-        <a href="./services.html">Services</a>
-        <a href="#">About</a>
-    </nav>
-    <!-- search -->
-    <form action="/action_page.php" id="search-bar">
-        <label>
-            <input type="text" placeholder="Search.." name="search">
-        </label>
-        <button type="submit">Search</button>
-    </form>
-</header>
+        <!-- logo -->
+        <!-- 
+            An ID has been given to the logo so that we can apply styles to it directly 
+            Alt text has also been used for accesibility reassons. ie screen reader users.
+        -->
+        <a href="./index.html"><img src="assets/img/logo.png" alt="Unholy Mountains Logo" id="logo"></a>
+        <!-- navigation -->
+        <!-- HTML 5 semantic tag nav has been used here to give the main navigation the proper semantic meaning -->
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./attraction-page.html">Attractions</a>
+            <a href="./services.html">Services</a>
+            <a href="#">About</a>
+        </nav>
+
+        <!-- search -->
+        <!-- An HTML form has been added here to allow users to submit a search query to the server -->
+        <form action="/action_page.php" id="search-bar">
+            <label>
+                <input type="text" placeholder="Search.." name="search">
+            </label>
+            <button type="submit">Search</button>
+        </form>
+    </header>
 
 <!-- main body contents -->
 <main>
@@ -108,9 +124,18 @@
     </section>
 
     <!-- footer -->
+    <!-- 
+        The footer is styled as a grid and it contains 4 cells. Therefore the different sections
+        have been splitted into 4 divs.
+    -->
     <footer>
+        <!-- The div allows us to group this and display it as a cell in a grid -->
         <div class="social">
             <!-- social media -->
+            <!-- 
+                Note that for accesibility reassons a title has been included for each image.
+                This shows when a user hover over the picture or for people using screen readers.
+            -->
             <h3>Follow Us</h3>
             <a href="/" title="Follow us on Instagram">
                 <img src="assets/img/social/instagram.svg" alt="Instagram Logo" />
@@ -126,6 +151,10 @@
             </a>
         </div>
         <!-- footer links -->
+        <!-- 
+            Note that footer-tickets and footer-attractions share the same styles mostly so both have been given the
+            same class "footer-links" to make it easier to apply CSS styles to both at the same time.
+        -->
         <div class="footer-tickets footer-links">
             <h3>Tickets</h3>
             <a href="/" title="Buy Tickets">Buy Tickets</a>
@@ -140,10 +169,18 @@
         </div>
         <div class="footer-contact">
             <h3>Contact Us</h3>
+            <!-- 
+                The mail to href has been used here tell the browser to open an email client 
+                when the user clicks on the link. 
+            -->
             <p>Email : <a href="mailto:forbidden-heights@example.com">forbidden-heights@example.com</a></p>
             <p>Address: </p>
 
             <!-- address -->
+            <!-- 
+                The address tag has been used to give the correct semantic meaning to the address information.
+                This is helpful for crawlers such as search engines who might find and use this information.
+            -->
             <address>
                 123 Main St. Forbidden Heights<br>
                 Scary Town<br>
