@@ -365,6 +365,7 @@ main#ap-main {
 /* ---------- Header Styles ---------- */
 
 header {
+    /* The header is displayed as a grid with six columns, containing the logo, nav bar and search box */
     display: grid;
     grid-template-areas: 
         "logo nav nav nav nav search-bar";
@@ -377,6 +378,7 @@ header {
 }
 
 #logo {
+    /* The logo is assigned to the grid area "logo" and displayed within the header grid */
     display: inline-block;
     grid-area: logo;
     height: 200px;
@@ -385,6 +387,7 @@ header {
 /* ---------- Nav Styles ---------- */
 
 nav {
+    /* The nav bar is assigned to the grid area "nav" and displayed within the header grid */
     grid-area: nav;
     display: grid;
     justify-items: center;
@@ -404,12 +407,14 @@ nav a {
 }
 
 nav a:hover {
+    /* a coloured border is displayed on hover and is eased in with a short animation */
     border-bottom: 2px solid var(--accent-color);
     transition: border-bottom 300ms ease;
 
 }
 
 #search-bar {
+    /* The search bar is assigned to the grid area "search-bar" and displayed within the header grid */
     grid-area: search-bar;
 }
 
