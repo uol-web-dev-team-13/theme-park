@@ -249,6 +249,9 @@ main#ap-main {
     padding: 50px;
 }
 
+/**
+    homepage banner
+ */
 #homepage .banner {
     position: relative;
     background: url(../img/banner.jpg);
@@ -256,6 +259,9 @@ main#ap-main {
     height: 500px;
 }
 
+/**
+    homepage main banner text
+ */
 #hp-banner-text {
     position: absolute;
     width: 600px;
@@ -267,6 +273,9 @@ main#ap-main {
     border: 5px solid white;
 }
 
+/**
+    homepage text animations
+ */
 #hp-banner-text h1 span:nth-of-type(1) {
     animation-delay: 0.05s;
 }
@@ -345,6 +354,9 @@ main#ap-main {
     animation: revolveScale .9s forwards;
 }
 
+/**
+    main homepage button
+ */
 #hp-banner-btn {
     position: absolute;
     width: 300px;
@@ -357,6 +369,9 @@ main#ap-main {
     font-family: 'Roboto', "Times New Roman", Times, serif;
 }
 
+/**
+    fake carousel
+ */
 .carousel a {
     font-size: 1em;
 }
@@ -404,6 +419,9 @@ main#ap-main {
     display: block;
 }
 
+/**
+    carousel image
+ */
 .carousel img {
     height : 350px;
 }
@@ -435,7 +453,9 @@ main#ap-main {
     margin-bottom: auto;
 }
 
-
+/**
+    clear floats
+ */
 .clearfix {
     clear: both;
 }
